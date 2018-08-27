@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="css/xdbj.css" />
+</head>
+
+<body>
+<!--头部开始-->
+<div class="top">
+  <div class="tp">
+     个人博客
+     <p>只有非常努力，看起来才毫不费力！<a href="http://mail.qq.com">www.1270980498@qq.com</a></p>
+  </div>
+  <div class="t">
+     <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="gyw.html">关于我</a></li>
+        <li><a href="qtsj.html">倾听世界</a></li>
+        <li><a href="wztj.html">文章推荐</a></li>
+        <li class="t1"><a href="xdbj.html">心得笔记</a></li>
+        <li><a href="lyb.html">留言板</a></li>
+     </ul>
+  </div>
+</div>
+<!--头部结束-->
+<!-- banner开始 -->
+<div class="banner">
+    <a href="" class="ig"><img src="images/01.jpg" width="100%" height="270"></a>
+    <a href="" class="ig"><img src="images/02.jpg" width="100%" height="270"></a>
+    <a href="" class="ig"><img src="images/03.jpg" width="100%" height="270"></a>
+    <a href="" class="ig"><img src="images/04.jpg" width="100%" height="270"></a>
+    
+
+
+    <div class="btn btn1"><</div>
+    <div class="btn btn2">></div>
+</div>
+<!-- banner结束 -->
+<!--中间开始-->
+<div class="center">
+  <div class="left">
+     <ul>
+        <li class="l1">个人资料</li>
+        <li class="l2">
+           <img src="images/2.jpg" width="220" height="230"  />
+           <p>曹鹏</p>
+        </li>
+        <li class="l3">
+           <p><a href="#">加好友</a><a href="#">发纸条</a></p>
+           <p><a href="#">写留言</a><a href="#">加关注</a></p>
+        </li>
+        <li class="l4">
+           <p>职业:PHP程序员</p>
+           <p>联系电话:18829207752</p>
+           <p>籍贯:陕西咸阳彬县</p>
+        </li>
+        <li class="l5">
+           <img src="images/4.gif" />
+        </li>
+     </ul>
+  </div>
+  <div class="right">
+    <h2><span>您现在的位置>>><a href="#">心得笔记</a></span>心得笔记</h2>
+       <table cellpadding="0" cellspacing="0" border="1" width="680">
+          <tr>
+             <td colspan="3"><font size="20"><center>HTML常见问题汇总</center></font></td>
+          </tr>
+          <tr>
+             <td>问题</td>
+             <td>问题分析</td>
+             <td>解决方案</td>
+          </tr>
+          <tr>
+              <td>1、布局突然很混乱</td>
+              <td>一般都由"colspan 、rowspan"两个属性引起，可能在"添加或删除""td或tr"时忘记更改或添加这两个属性。
+              </td>
+              <td>查看"colspan 、rowspan"两个属性值设置是否正确。</td>
+          </tr>
+          <tr>
+              <td>2、表格嵌套时将外层的表格撑大</td>
+              <td>1、"cellspacing、 cellpadding"引起。默认值都为1px<p>2、"border"引起注意：这三个属性的宽度都包含在表格宽度之内，在IE浏览器中是这样。可能不同的浏览器有不同的默认包含关系。</p>
+              </td>
+              <td>1、设置cellspacing="0″ cellpadding="0″ border="0″<p>2、如果必须设置这三个属性的值，则合理计算并设置其值。</p>
+              </td>
+          </tr>
+          <tr>
+              <td>3、设置的具体的宽度，可还是不自动回车</td>
+              <td>汉字可自动回车，英文不自动回车</td>
+              <td>针对英文可加这样的css属性：style="word-break:break-all"</td>
+          </tr>
+          <tr>
+              <td>4、已经设置了border大小，为什么却没有显示？</td>
+              <td>表格中没有任何内容，甚至没有空格</td>
+              <td>如果为了看着方便可暂时加入一个空格。</td>
+          </tr>
+          <tr>
+              <td>5、当长或高的尺寸设置小于某一值后实际长宽就不随属性值的减小而减小了</td>
+              <td>很可能的原因是单元格内有空格，空格如果一个文字一样，它占据一定的空间</td>
+              <td>将空格去掉。或者设置：style="font-size:0px; line-height:0px;"
+              </td>
+          </tr>
+          <tr>
+              <td>6、设置border=1，为什么实际的好象比1px粗（实际是2px）</td>
+              <td>表格由连续的单元格构成，每个单元格的边框都独立存在，所以相临两个单元格的边框挨在一起变成了2px
+              </td>
+              <td>添加这样的属性：style="border-collapse:collapse"</td>
+          </tr>
+          <tr>
+              <td>7、所设的属性值不起作用</td>
+              <td>这个问题很另类，当代码书写成这样时：width=  height="20″ ，此时，无论怎么更改height的值就是不起作用，因为浏览器将"width="后面的内容都做为width的属性值，所以不能正确识别height="20″ 的含义。
+              </td>
+              <td>出现这样的问题都是我们书写代码时马虎所致，类似的错误还有很多，这样的错误一但出现了，很不容易查找，所以要求我们在书写代码时要尽量规范认真。
+              </td>
+          </tr>
+          <tr>
+              <td>8、页面的上边总是留出一段空白</td>
+              <td>body默认有个上边距，设置这个值的属性topmargin有很多相关的书籍都不给介绍，以后记住就行了。
+              </td>
+              <td>设置：topmargin="0″，相关的属性有：leftmargin、rightmargin、bottommargin
+              </td>
+          </tr>
+          <tr>
+             <td>9、已经设置tr或td具体高度可还是平分table高度</td>
+             <td>当给表格设置了具体的高度的时候，table内的tr会自动平分table的高度，不管是否设置了tr或td的高度，尤其在做新闻之类的信息列表时容易出项这样的问题。
+             </td>
+             <td>不设置table的具体高度，让其随内容的增加自然延伸。</td>
+          </tr>
+          <tr>
+             <td>10、td中的所有内容自动居中</td>
+             <td>根据长时间以来的经验来看，当没有具体设置td的aling属性值的时候，在本地测试时内容默认居左，而在客户端访问的时候，内容却默认居中。
+             </td>
+             <td>明确设置td的aling属性值，避免带来麻烦。</td>
+          </tr>
+          <tr>
+             <td>11、浏览器兼容问题</td>
+             <td>&nbsp;</td>
+             <td>这个涉及到的问题比较多，不适合在这里一一说明，建议参考"浏览器兼容专题"的文章。
+             </td>
+          </tr>
+          <tr>
+             <td colspan="3"><b>特殊说明：</b> 以上是我这么长时 间以来经常遇到的、很典型的、书上很少提及过的问题，暂时就想起这些。以前遇到时也没有及时记录下来，主要是因为html是很简单的制作网页的一种编辑语 言，它比任何其他的机器语言都简单得多，所以只要用心学，多做多练一定没问题。如果在学习的过程中遇到其他的问题，我们再具体问题具体分析。我建议你在学 习过程中养成记录"学习笔记"的习惯，把自己遇到过的问题，问题的解析、解决方法还有一些学习心得等记录下来，以便今后的学习和查找。
+             </td>
+          </tr>
+       </table>
+  </div>
+  <div style="clear:both"></div>
+</div>
+<!--中间结束-->
+<!--尾部开始-->
+<div class="footer">
+  Design  by  DanceSmile   陕Icp备  11002373号-1   网站统计
+</div>
+<!--尾部结束-->
+</body>
+</html>
